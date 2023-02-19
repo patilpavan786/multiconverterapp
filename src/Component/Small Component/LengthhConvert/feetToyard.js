@@ -59,7 +59,7 @@ function FeetToyard() {
           <div className={style.container1}>
             <h1>yard</h1>
             <input
-              placeholder={`${(value1 * 43560).toFixed(6)}  yard`}
+              placeholder={`${(value1 * 3).toFixed(6)}  yard`}
               onChange={(e) => setValue2(e.target.value)}
               className={style.input}
             />
@@ -68,7 +68,7 @@ function FeetToyard() {
           <div className={style.container1}>
             <h1>foot</h1>
             <input
-              placeholder={`${(value2 / 43560).toFixed(6)}  foot`}
+              placeholder={`${(value2 / 3).toFixed(6)}  foot`}
               onChange={(e) => setValue1(e.target.value)}
               className={style.input}
             />
