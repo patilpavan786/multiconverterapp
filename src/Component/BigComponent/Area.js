@@ -4,6 +4,7 @@ import style from "./Common.module.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
 
 function Area() {
 
@@ -47,6 +48,7 @@ function Area() {
 
   return (
     <div>
+      <NavBar />
       {newdata.map((x, index) => {
         return (
           <div key={x.index} className={style.containerArea}>

@@ -4,6 +4,7 @@ import style from "./Common.module.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
 
 
 function Pressure() {
@@ -13,13 +14,13 @@ function Pressure() {
       srno: "1",
       unit1: "bar",
       unit2: "psi",
-      icon: <p onClick={()=> navigate("/Currancy") }>  <ArrowForwardIcon /></p>
+      icon: <p onClick={()=> navigate("/BarTopsi") }>  <ArrowForwardIcon /></p>
     },
     {
       srno: "2",
       unit1: "kilopascal",
       unit2: "psi",
-      icon: <p onClick={()=> navigate("/Currancy") }>  <ArrowForwardIcon /></p>
+      icon: <p onClick={()=> navigate("/KilopascalTopsi") }>  <ArrowForwardIcon /></p>
     },
 
   ];
@@ -27,6 +28,7 @@ function Pressure() {
 
   return (
     <div>
+      <NavBar />
       {newdata.map((x, index) => {
         return (
           <div key={x.index} className={style.containerArea}>
